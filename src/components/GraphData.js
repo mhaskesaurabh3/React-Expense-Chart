@@ -6,17 +6,9 @@ import { Chart as ChartJS } from 'chart.js/auto';
 
 const GraphData = () => {
   const dayAmount = Data.map((data) => data.amount);
-  //   const config = {
-  //     plugins: {
-  //       callbacks: {
-  //         label: function (tooltipItem) {
-  //           return `${amount}`;
-  //         },
-  //       },
-  //     },
-  //   };
 
-  let options = {
+
+let options = {
     scales: {
       x: {
         grid: {
@@ -27,6 +19,9 @@ const GraphData = () => {
         grid: {
           display: false,
         },
+      },
+      y: {
+        display: false,
       },
     },
   };
@@ -59,11 +54,6 @@ const GraphData = () => {
     totalAmount(dayAmount);
   }, [dayAmount]);
 
-  //   setAmount(total);
-
-  //   useEffect(() => {
-  //     // totalAmount(dayAmount);
-  //   }, [dayAmount]);
 
   return (
     <div className='graph-background'>
