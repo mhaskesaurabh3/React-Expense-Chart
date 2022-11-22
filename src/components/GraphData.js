@@ -30,7 +30,7 @@ let options = {
     labels: Data.map((data) => data.day),
     datasets: [
       {
-        label: 'Spending- Last 7 days',
+        label: '',
         data: Data.map((data) => data.amount),
         backgroundColor: '#ec755d',
         hoverBackgroundColor: '#76b5bc',
